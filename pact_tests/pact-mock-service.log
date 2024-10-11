@@ -1,0 +1,36 @@
+I, [2024-10-10T12:06:52.346668 #24188]  INFO -- : Cleared interactions
+I, [2024-10-10T12:06:52.350612 #24188]  INFO -- : Registered expected interaction GET /api/users?page=1
+D, [2024-10-10T12:06:52.350764 #24188] DEBUG -- : {
+  "description": "a request for users",
+  "providerState": "User exists",
+  "request": {
+    "method": "get",
+    "path": "/api/users",
+    "query": {
+      "page": [
+        1
+      ]
+    }
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+    },
+    "body": {
+      "page": 1,
+      "per_page": 6,
+      "total": 12,
+      "total_pages": 2,
+      "data": [
+        {
+          "id": 1,
+          "email": "george.bluth@reqres.in",
+          "first_name": "George",
+          "last_name": "Bluth",
+          "avatar": "https://reqres.in/img/faces/1-image.jpg"
+        }
+      ]
+    }
+  },
+  "metadata": null
+}

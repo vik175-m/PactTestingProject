@@ -1,0 +1,143 @@
+I, [2024-10-11T13:03:59.948942 #29588]  INFO -- : Cleared interactions
+I, [2024-10-11T13:03:59.956490 #29588]  INFO -- : Registered expected interaction GET /api/users?page=1
+D, [2024-10-11T13:03:59.956635 #29588] DEBUG -- : {
+  "description": "a request for users",
+  "providerState": "Users exist",
+  "request": {
+    "method": "get",
+    "path": "/api/users",
+    "query": {
+      "page": [
+        "1"
+      ]
+    }
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+    },
+    "body": {
+      "page": 1,
+      "per_page": 6,
+      "total": 12,
+      "total_pages": 2,
+      "data": [
+        {
+          "id": 1,
+          "email": "george.bluth@reqres.in",
+          "first_name": "George",
+          "last_name": "Bluth",
+          "avatar": "https://reqres.in/img/faces/1-image.jpg"
+        },
+        {
+          "id": 2,
+          "email": "janet.weaver@reqres.in",
+          "first_name": "Janet",
+          "last_name": "Weaver",
+          "avatar": "https://reqres.in/img/faces/2-image.jpg"
+        },
+        {
+          "id": 3,
+          "email": "emma.wong@reqres.in",
+          "first_name": "Emma",
+          "last_name": "Wong",
+          "avatar": "https://reqres.in/img/faces/3-image.jpg"
+        },
+        {
+          "id": 4,
+          "email": "eve.holt@reqres.in",
+          "first_name": "Eve",
+          "last_name": "Holt",
+          "avatar": "https://reqres.in/img/faces/4-image.jpg"
+        },
+        {
+          "id": 5,
+          "email": "charles.morris@reqres.in",
+          "first_name": "Charles",
+          "last_name": "Morris",
+          "avatar": "https://reqres.in/img/faces/5-image.jpg"
+        },
+        {
+          "id": 6,
+          "email": "tracey.ramos@reqres.in",
+          "first_name": "Tracey",
+          "last_name": "Ramos",
+          "avatar": "https://reqres.in/img/faces/6-image.jpg"
+        }
+      ]
+    }
+  },
+  "metadata": null
+}
+I, [2024-10-11T13:03:59.958898 #29588]  INFO -- : Received request GET /api/users?page=1
+D, [2024-10-11T13:03:59.958956 #29588] DEBUG -- : {
+  "path": "/api/users",
+  "query": "page=1",
+  "method": "get",
+  "headers": {
+    "Host": "localhost:1235",
+    "User-Agent": "python-requests/2.32.3",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive",
+    "Version": "HTTP/1.1"
+  }
+}
+I, [2024-10-11T13:03:59.959180 #29588]  INFO -- : Found matching response for GET /api/users?page=1
+D, [2024-10-11T13:03:59.959238 #29588] DEBUG -- : {
+  "status": 200,
+  "headers": {
+  },
+  "body": {
+    "page": 1,
+    "per_page": 6,
+    "total": 12,
+    "total_pages": 2,
+    "data": [
+      {
+        "id": 1,
+        "email": "george.bluth@reqres.in",
+        "first_name": "George",
+        "last_name": "Bluth",
+        "avatar": "https://reqres.in/img/faces/1-image.jpg"
+      },
+      {
+        "id": 2,
+        "email": "janet.weaver@reqres.in",
+        "first_name": "Janet",
+        "last_name": "Weaver",
+        "avatar": "https://reqres.in/img/faces/2-image.jpg"
+      },
+      {
+        "id": 3,
+        "email": "emma.wong@reqres.in",
+        "first_name": "Emma",
+        "last_name": "Wong",
+        "avatar": "https://reqres.in/img/faces/3-image.jpg"
+      },
+      {
+        "id": 4,
+        "email": "eve.holt@reqres.in",
+        "first_name": "Eve",
+        "last_name": "Holt",
+        "avatar": "https://reqres.in/img/faces/4-image.jpg"
+      },
+      {
+        "id": 5,
+        "email": "charles.morris@reqres.in",
+        "first_name": "Charles",
+        "last_name": "Morris",
+        "avatar": "https://reqres.in/img/faces/5-image.jpg"
+      },
+      {
+        "id": 6,
+        "email": "tracey.ramos@reqres.in",
+        "first_name": "Tracey",
+        "last_name": "Ramos",
+        "avatar": "https://reqres.in/img/faces/6-image.jpg"
+      }
+    ]
+  }
+}
+I, [2024-10-11T13:03:59.961013 #29588]  INFO -- : Verifying - interactions matched
+I, [2024-10-11T13:03:59.962956 #29588]  INFO -- : Writing pact for UserService to ./pacts/userclient-userservice.json

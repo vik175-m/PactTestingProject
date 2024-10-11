@@ -1,0 +1,12 @@
+# Ignore virtual environment
+venv/
+.idea/
+
+# Ignore system files
+*.pyc
+__pycache__/
+
+# Add exceptions for the files you want to track (remove this if unnecessary)
+!*.py
+!*.json
+
